@@ -65,13 +65,11 @@ def print_report(agents):
 
 
 if __name__ == "__main__":
-
-    # agents = [Agent("consumer")]
     agent_names = ["consumer", "collector", "observer"]
     agents = []
     num_agents = len(agents)
-    ticks = 25
-    max_agents = 1
+    ticks = 500
+    max_agents = 1000
     add_agents_interval = 1
     num_agents_to_add = 3
 
@@ -81,7 +79,7 @@ if __name__ == "__main__":
         actions_summary = {}
         tick_agents(agents, actions_summary)
 
-        if len(agents) < num_agents_to_add:
+        if len(agents) < max_agents:
             if (tick+1) % add_agents_interval == 0:
                 for _ in range(num_agents_to_add):
                     agent_name = random.choice(agent_names)

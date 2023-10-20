@@ -6,10 +6,9 @@ This is a simple agent simulation program that simulates the behavior of multipl
 
 To run the agent simulation, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/agent-simulation.git`
+1. Clone the repository: `git clone https://github.com/m3mnoch/agent-simulation.git`
 2. Navigate to the project directory: `cd agent-simulation`
-3. Install the required dependencies: `pip install -r requirements.txt`
-4. Run the simulation: `python main.py`
+3. Run the simulation: `python simulation.py`
 
 ## Usage
 
@@ -19,11 +18,14 @@ The agent simulation program consists of the following components:
 - `ActionBundles` class: Provides a mechanism to fetch actions for agents and perform actions.
 - `print_report` function: Prints a report of the simulation results, including the number of agents, actions completed, and total number of items.
 
-To customize the simulation, you can modify the following parameters in the `main.py` file:
+To customize the demonstration simulation, you can modify the following parameters in the `simulation.py` file:
 
-- `NUM_AGENTS`: The number of agents to simulate.
-- `NUM_ACTIONS`: The number of actions to fetch for each agent.
-- `ITEMS`: A list of items that can be collected by agents.
+- `ticks`: How many ticks/turns you want to simulate.
+- `max_agents`: The maximum number of agents to simulate.
+- `add_agents_interval`: How often to add agents.
+- `num_agents_to_add`: How many agents to add at each interval.
+
+However, it will be far more useful to modify the `actions.py` file to customize it with the specific actions you want your agents to take.
 
 ## Contributing
 
@@ -39,6 +41,6 @@ This agent simulation program is inspired by various agent-based modeling and si
 
 ## Contact
 
-For any questions or inquiries, please contact [your-email-address].
+For any questions or inquiries, please contact [chris@m3mnoch.com].
 
 Thank you for using the agent simulation program!

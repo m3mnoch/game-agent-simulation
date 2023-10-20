@@ -20,6 +20,10 @@ class ActionBundles:
     def perform_action(self, agent, action):
         if action["name"] == "collect":
             self.collect_item(agent)
+        elif action["name"] == "consume":
+            self.consume_item(agent)
+        elif action["name"] == "trade":
+            self.trade_item(agent)
 
     def collect_item(self, agent):
         item = random.choice(["apple", "banana", "orange"])
