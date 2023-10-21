@@ -6,7 +6,7 @@ This is a simple agent simulation program that simulates the behavior of multipl
 
 To run the agent simulation, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/m3mnoch/agent-simulation.git`
+1. Clone the repository: `git clone https://github.com/m3mnoch/game-agent-simulation.git`
 2. Navigate to the project directory: `cd agent-simulation`
 3. Run the simulation: `python simulation.py`
 
