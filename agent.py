@@ -22,7 +22,7 @@ class Agent:
             action = self.actions[0]
             action['turns'] -= 1
 
-            if action['turns'] == 0:
+            if action['turns'] <= 0:
                 action = self.actions.pop(0)
                 self.log.append({
                     "name": action['name'],
@@ -32,6 +32,10 @@ class Agent:
                 })
                 self.bundles.perform_action(self, action)
 
+                # refresh their actions.
+                if len(self.actions) == 0:
+                    self.actions = self.bundles.fetch_actions(self.name)
+
             else:
                 self.log.append({
                     "name": action['name'],
@@ -40,6 +44,7 @@ class Agent:
                     "message": "performing action"
                 })
 
+            # print("actions:", self.actions)
             return [action]
 
         return [{"name": "idle", "target": "self", "count": 1, "turns": 1}]

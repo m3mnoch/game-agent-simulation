@@ -27,6 +27,8 @@ To customize the demonstration simulation, you can modify the following paramete
 
 However, it will be far more useful to modify the `actions.py` file to customize it with the specific actions you want your agents to take.
 
+NOTE:  The agents are basically multi-threaded, so feel free to dump in as many as your system can handle.
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.

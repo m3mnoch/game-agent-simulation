@@ -68,8 +68,8 @@ if __name__ == "__main__":
     agent_names = ["consumer", "collector", "observer"]
     agents = []
     num_agents = len(agents)
-    ticks = 500
-    max_agents = 1000
+    ticks = 50
+    max_agents = 10
     add_agents_interval = 1
     num_agents_to_add = 3
 
